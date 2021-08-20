@@ -1,0 +1,36 @@
+<h1>Areas</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2"> Name</th>
+        </tr>
+    </thead>
+    <tbody>
+    <%= for area  <- @areas  do %>
+        <tr>
+            <td>
+                <%= area.name  %>
+            </td>
+            <td>
+                <%= link to: Routes.question_path(@conn, :index, area.id) do %>
+                    <i class="fas fa-question"></i>
+                <% end %>
+                <%= link to: Routes.area_path(@conn, :edit, area.id) do %>
+                    <i class="far fa-edit"></i>
+                <% end %>
+                <%= link to: Routes.area_path(@conn, :delete, area.id),
+                    method: :delete,
+                    data: [confirm: "Are you sure? "] do %>
+
+                    <i class="fas fa-trash"></i>
+                 <% end %>
+            </td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
+
+<div>
+    <%= link "New Area", to: Routes.area_path(@conn, :new), class: "btn" %>
+</div>
