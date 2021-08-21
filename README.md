@@ -30,7 +30,7 @@ Site link: (I unfortunately ran out of credits...)
 
 ### Application Architecture:
 
-![image](images/Screenshot 2021-04-29 at 05.10.08)
+![image](images/overview.png)
 
 ### Website Look:
 
