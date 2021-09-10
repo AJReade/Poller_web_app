@@ -24,7 +24,7 @@ Site link: (I unfortunately ran out of credits...)
 > - HTTP (GET, POST, PUT, PATCH, DELETE, status codes)
 > - Phoenix channels (persistant web stocket connection)
 > - PubSub 
-> - Testing API Endpoints (SwaggerUI & Postman)
+> - Testing of API Endpoints
 
 *Note: Please excuse the large comments in my code, they were used as notes for my NEA write up later.*
 
