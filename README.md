@@ -2,7 +2,7 @@
 A single page exiting polling web applcation using: postgres, react js, elixir and pheonix.
 Site link: (I unfortunately ran out of credits...)
 
-#### An exit polling web application which allows users to login and create polls (admin only) which are shown on a dynamic results page (avaible to all users). The results page updates in real time. Build as part of my NEA for computer sciecne A level and recieved an A*.
+#### An exit polling web application which allows users to login and create polls (admin only) which are shown on a dynamic results page (avaible to all users). The results page updates in real time. 
 
 ### The primamry purpose of this project is to learn and practice concepts related to:
 > - Building a REST API
