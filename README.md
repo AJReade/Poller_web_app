@@ -8,7 +8,6 @@ Site link: (I unfortunately ran out of credits...)
 > - Building a REST API
 > - Elxir lang
 > - Phoenix web frame work
-> - React js front end
 > - MVC Architectural Pattern
 > - full stack deveopment
 > - Sibling project intergration
