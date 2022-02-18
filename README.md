@@ -9,6 +9,7 @@ Site link: (I unfortunately ran out of credits...)
 > - Elxir lang
 > - Phoenix web frame work
 > - MVC Architectural Pattern
+> - React.Js front end
 > - full stack deveopment
 > - Sibling project intergration
 
