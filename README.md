@@ -60,7 +60,7 @@ Site link: (I unfortunately ran out of credits...)
 ![image](images/Poll.png)
 
 #### Real-time results:
-![image](images/Realtime_votes.png)
+![image](images/Realtime_vote.png)
 
 ### Access control 
 ![image](images/User_access_control.png)
