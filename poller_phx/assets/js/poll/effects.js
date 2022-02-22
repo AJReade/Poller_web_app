@@ -59,13 +59,16 @@ export const pollResultEffects = (areaId, dispatch) => () => {
   channel
     .join()
     .receive('ok', ({poll}) => {
-      console.log(poll); 
+      dispatch(pollMsg(poll));
     })
     .receive('error', reason => {
       console.log({reason});
     });
+  // channel.on('msg', ({msg}) => {
+  //   console.log('msg', msg);
+  // });
   channel.on('area_update', ({choice_id, votes}) => {
-    console.log('area_update', choice_id, votes);
+    dispatch(voteUpdateMsg(choice_id, votes));
   });
   return () => {
     channel.leave();

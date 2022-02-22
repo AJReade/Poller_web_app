@@ -30,7 +30,7 @@ defmodule PollerDal.Areas do
   #! signifies func will throw error is call fails
   def get_area!(id), do: Repo.get!(Area, id)
 
-  # function to create district change set for poller_phx section of project
+  # function to create area change set for poller_phx section of project
   def change_area(%Area{} = area) do
     Area.changeset(area, %{})
   end

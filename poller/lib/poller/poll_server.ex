@@ -3,7 +3,8 @@ defmodule Poller.PollServer do
   alias Poller.{Poll, PubSub}
   alias PollerDal.{Questions, Choices}
 
-  @save_time 10 * 60 * 1000
+  #prevent bottle neck at database
+  @save_time 5 * 60 * 1000
 
   def start_link(area_id) do
     name = area_name(area_id)
@@ -26,7 +27,6 @@ defmodule Poller.PollServer do
     name = area_name(area_id)
     GenServer.call(name, :get)
   end
-
   # CallBacks
 
   def init(area_id) do
@@ -72,13 +72,15 @@ defmodule Poller.PollServer do
         |> Map.put(:choices, choices)
       end
 
+
     result = %{
       area_id: poll.area_id,
       questions: questions
     }
-
+    # votes: poll.votes, #added by me recently
     {:reply, result, poll}
   end
+
 
   def save_votes(poll) do
     poll.votes
@@ -101,6 +103,6 @@ defmodule Poller.PollServer do
     schedule_save()
     {:noreply, poll}
   end
-
+  #saves state if genserver crashes
   def terminate(_reason, poll), do: save_votes(poll)
 end

@@ -21,8 +21,14 @@ defmodule PollerPhxWeb.ResultChannel do
     {:noreply, socket}
   end
 
+  # def handle_info({:msg, msg}, socket) do
+  #   push(socket, "msg", %{msg: msg})
+  #   {:noreply, socket}
+  # end
+
   def terminate(_reason, socket) do
     area_id = socket.assigns.area_id
     PubSub.unsubscribe_area(area_id)
+    # Logger.info("termminating #{area_id}")
   end
 end
