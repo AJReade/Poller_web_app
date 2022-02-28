@@ -1,6 +1,6 @@
 # Polling web application (Elixir, Phoenix, React js)
 A single page exiting polling web applcation using: postgres, react js, elixir and pheonix.
-Site link: (I unfortunately ran out of credits...)
+
 
 #### An exit polling web application which allows users to login and create polls (admin only) which are shown on a dynamic results page (avaible to all users). The results page updates in real time. 
 
