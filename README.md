@@ -28,19 +28,14 @@ A single page exiting polling web applcation using: postgres, react js, elixir a
 
 *Note: Please excuse the large comments in my code, they were used as notes for my NEA write up later.*
 
-### Application Slibing Architecture:
-
-![image](images/Overview.png)
+### Application Slibing Architecture
 
 ### State is accessed via genservers to reduce creating bottle neck from DB queries, architecture below saves state from gen-servers to db using a scheduler to prevent loss of votes in cash.
 ![image](images/save_vote_architecture.png)
 
-### Real time Pubsub + Pheonix webstock channels:
-![image](images/web_socket.png)
-![image](images/PubSub.png) ![image](images/PubSub.png)
+### Real time Pubsub + Pheonix websocket channels
 
 #### Creates real time update for subscribed clients every time a vote is clicked in a poll
-![image](images/realtime_update.png)
 
 ### Website Look:
 #### Home:
