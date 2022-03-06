@@ -35,7 +35,7 @@ A single page exiting polling web applcation using: postgres, react js, elixir a
 
 ### Real time Pubsub + Pheonix websocket channels
 
-#### Creates real time update for subscribed clients every time a vote is clicked in a poll
+#### - Creates real time update for subscribed clients every time a vote is clicked in a poll
 
 ### Website Look:
 #### Home:
